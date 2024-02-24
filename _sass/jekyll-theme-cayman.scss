@@ -105,45 +105,75 @@ a {
   }
 }
 .page-menu{
-  color: $section-headings-color;
-  position: fixed;
+
+  position:fixed;
   width:100%;
-  background-color: rgba(255, 255, 255, 0.2);
   @include large {
-    padding: 0.7rem 12rem 0.5rem 12rem;
+    padding: 1.1rem 11rem 1rem 11rem;
   }
 
   @include medium {
-    padding: 3rem 4rem;
+    padding: 1.2rem 4rem 1rem 4rem;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 1.4rem 2rem 1rem 2rem;
   }
+}
+.text-left{
+  float: left;
+}
+.text-right{
+  float: right;
+}
+.menu-item{
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  color: $header-heading-color;
+
+  @include large {font-size: 1.2rem;}
+  @include medium {font-size: 1.2rem;}
+  @include small {font-size: 1rem;}
+}
+.place-holder{
+  width:100%;
+  height:26rem;
+}
+.fixed{
+  position: fixed;
+}
+.moved{
+  position:absolute;
 }
 .page-header {
+  width: 100%;
   color: $header-heading-color;
-  text-align: center;
+  text-align: left;
+  height: 24rem;
   background-color: $header-bg-color;
   background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
-
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  
   @include large {
-    padding: 7rem 6rem 5rem 6rem;
+    padding: 8rem 11rem 3.5rem 11rem;
   }
 
   @include medium {
-    padding: 3rem 4rem;
+    padding: 9rem 4rem 4rem 4rem;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 8rem 2rem 2rem 2rem;
   }
 }
+
 
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem;
-
+  line-height: 125%;
+  width:83%;
   @include large {
     font-size: 3.25rem;
   }
@@ -161,7 +191,7 @@ a {
   margin-bottom: 2rem;
   font-weight: normal;
   opacity: 0.7;
-
+  width:95%;
   @include large {
     font-size: 1.25rem;
   }
